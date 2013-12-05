@@ -46,7 +46,6 @@ int Generator::mkrng(std::map<int, int> &cnt,
 {
 	int rngsiz = round(sqrt(cnt.size())) + correction;
 	if (rngsiz < 1) return 1000;
-//	std::cout << "avg rng size: " << rngsiz << std::endl;
 	if (real)
 		rvec.reserve(rngsiz);
 	int twght;
