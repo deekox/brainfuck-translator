@@ -4,8 +4,6 @@
 #include <iostream>
 #include "Generator.h"
 
-using namespace std;
-
 int main(int argc, char *argv[]) {
 	if (argc != 2) {
 		std::cerr << "Usage: " << argv[0] << " file\n";
@@ -21,7 +19,6 @@ int main(int argc, char *argv[]) {
 	std::istreambuf_iterator<char> iit(file.rdbuf()), eos;
 	std::string cnt(iit, eos);
 	file.close();
-	std::cout << "file size: " << cnt.size() << std::endl
-	          << cnt;
+	std::cout << "file size: " << cnt.size() << std::endl;
 	Generator g(cnt);
 }

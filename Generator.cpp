@@ -73,7 +73,6 @@ int Generator::mkrng(std::map<int, int> &cnt,
 			break;
 
 	}
-//	cout <<  "insertions: " << insertions << endl;
 	return abs(insertions - rngsiz);
 }
 
