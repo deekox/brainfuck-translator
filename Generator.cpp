@@ -10,6 +10,11 @@ Generator::Generator(const std::string & txt) :
 			x.descrb();});
 }
 
+Generator::~Generator()
+{
+	std::cout << "~Genereator\n";
+}
+
 void Generator::analyze(const std::string &str) {
 	std::map<int, int> cnt;
 	std::map<int, int>::iterator p;

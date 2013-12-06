@@ -25,6 +25,7 @@ class Generator {
 
 public:
 	Generator(const std::string & txt);
+	virtual ~Generator();
 };
 
 #endif //GENERATOR_H
